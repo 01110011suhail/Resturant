@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    color: rgb(245, 21, 118);
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar h1 {
+    margin: 0px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    margin-left: 24px;
+    color: aliceblue;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.navbar li a::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar li a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+#Home {
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/hero.jpeg);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-top: 40px; 
+}
+
+#Home h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+#Home h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn1 {
+    border: 1px solid goldenrod;
+    background: transparent;
+    position: relative;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    width: 100px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn1:hover {
+    background-color: black;
+    color: pink;
+    transform: scale(1.2, 1) translateY(10px); 
+}
+
+#Menu {
+    background: #000;
+}
+
+#Menu h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu_row {
+    display: flex;
+    padding: 0 100px 0 100px;
+}
+
+.menu_col {
+    box-shadow: 2px 2px 2px #bbb;
+    background-color: #fff;
+    border: 2px solid #bbb;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    border-radius: 10px;
+}
+
+.menu_col h2 {
+    background: black;
+    color: rgb(245, 21, 118);
+    padding: 10px;
+}
+
+.d h3 {
+    color: orange;
+    font-size: 2rem;
+}
+
+.d h4 {
+    color: green;
+    font-size: 1.5rem;
+ }
+.box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.image {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid orange;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.chef-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Chef h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+}
+
+.box1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.box1 h2{
+    text-align: center;
+}
+
+.image1{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+}
+.image1 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#About{
+    width: 100%;
+    height: 100vh;
+}
+#About h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+}
+#Contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    width: 30%;
+    height: 60vh;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.form1 input{
+    width: 300px;
+    height: 40px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.form1 textarea{
+    width: 300px;
+    height: 80px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+.form button{
+    font-size: 1rem;
+    background: orange;
+    color: #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 600;
+
+}
+
+
+.contact-h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.contact-details{
+    font-size: 1.5rem;
+}
+
+.contact-details i{
+    color: rgb(0, 0, 0);
+
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+.contact-details i:hover{
+    color: red;
+
+}
+
+footer{
+    background: #202020;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+    #Menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
